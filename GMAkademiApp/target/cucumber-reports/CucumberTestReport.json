@@ -1,0 +1,267 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 118560,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Login the app successfully as a GM User",
+        "description": "",
+        "id": "successful-login-section;login-the-app-successfully-as-a-gm-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1408549407,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1644364,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the user selection screen",
+            "match": {
+              "location": "LoginSteps.iAmOnTheUserSelectionScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2573337296,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click General Mobile Kullanicisiyim text",
+            "match": {
+              "location": "LoginSteps.iClickGeneralMobileKullanicisiyimText()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15019932859,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill Email field with \"ozdemirseda59@gmail.com\" and Password field with \"12345TesT!\" and click Sign in on Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ozdemirseda59@gmail.com",
+                  "offset": 25
+                },
+                {
+                  "val": "12345TesT!",
+                  "offset": 75
+                }
+              ],
+              "location": "LoginSteps.iFillEmailFieldWithAndPasswordFieldWithAndClickSignInOnLoginScreen(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3179812199,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see \"ozdemirseda59@gmail.com\" on my profile screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ozdemirseda59@gmail.com",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginSteps.iShouldSeeOnMyProfileScreen(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Successful Login Section",
+    "description": "",
+    "id": "successful-login-section",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 30207,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the user selection screen",
+            "match": {
+              "location": "LoginSteps.iAmOnTheUserSelectionScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2691813033,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click General Mobile Kullanicisiyim text",
+            "match": {
+              "location": "LoginSteps.iClickGeneralMobileKullanicisiyimText()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15842565116,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill Email field with \"ozdemirseda59@gmail.com\" and Password field with \"12345TesT!\" and click Sign in on Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ozdemirseda59@gmail.com",
+                  "offset": 25
+                },
+                {
+                  "val": "12345TesT!",
+                  "offset": 75
+                }
+              ],
+              "location": "LoginSteps.iFillEmailFieldWithAndPasswordFieldWithAndClickSignInOnLoginScreen(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 140837,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Logout the app successfully as a GM User",
+        "description": "",
+        "id": "successful-logout-section;logout-the-app-successfully-as-a-gm-user",
+        "after": [
+          {
+            "result": {
+              "duration": 1226474745,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2062468826,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click Menu on Main Screen",
+            "match": {
+              "location": "LogoutSteps.iClickMenuOnMainScreen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1706526972,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click Cıkıs Yap button",
+            "match": {
+              "location": "LogoutSteps.iClickCıkısYapButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 671441426,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see User Selection Screen",
+            "match": {
+              "location": "LogoutSteps.iShouldSeeUserSelectionScreen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Successful Logout Section",
+    "description": "",
+    "id": "successful-logout-section",
+    "keyword": "Feature",
+    "uri": "Logout.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Logout"
+      }
+    ]
+  }
+]
+]

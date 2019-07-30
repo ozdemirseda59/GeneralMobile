@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GM Akademi-Android-Test-Suite" parallel="tests" thread-count="3">
+
+    <!--SonyXperia_Settings-->
+    <test name="Test-Galaxy S9+" parallel="classes" thread-count="3">
+        <parameter name="deviceName" value="Galaxy S9+" />
+        <parameter name="udid" value="224942384c0d7ece" />
+        <parameter name="platformVersion" value="8.0"/>
+        <parameter name="url" value="http://0.0.0.0:4724/wd/hub"/>
+        <parameter name="systemPort" value="8081"/>
+        <classes>
+            <class name="tests.cucumber.runner.RunCucumberFeatures"/>
+        </classes>
+    </test>
+    <test name="Test-Galaxy-S8+" parallel="classes" thread-count="3">
+        <parameter name="deviceName" value="Galaxy S8+" />
+        <parameter name="udid" value="988995335a36393238" />
+        <parameter name="platformVersion" value="8.0"/>
+        <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+        <parameter name="systemPort" value="8080"/>
+        <classes>
+            <class name="tests.cucumber.runner.RunCucumberFeatures"/>
+        </classes>
+    </test>
+</suite>
